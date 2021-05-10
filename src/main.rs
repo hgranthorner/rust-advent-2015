@@ -1,3 +1,8 @@
+mod day_one;
+
 fn main() {
-    println!("Hello, world!");
+    match day_one::part_two() {
+        Ok(v) => println!("{}", v),
+        Err(e) => println!("{:?}", e)
+    }
 }
